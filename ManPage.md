@@ -2,9 +2,33 @@
 
 *What is a man page? Why is it useful? For what purpose does it serve?*
 
-### What is it? (•᷄ὤ•᷅)？
+> This document is to provide a short (but not really short 눈_눈) tutorial/reference as to what a man page is and how to use it. Consider the man page as a mini-Google of the terminal. You can find information on commands, functions, and other programming related topics within your terminal without the use of the internet ( ᐛ )و. This way, if you were at a wifi-less location coding with **VIM** (like you're supposed to), you can use the man page to reference your needs. 
 
-> Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized as follows:
+> Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **Table of contents** is here:
+
+1. [Introduction] (#introduction)
+2. [Sections] (#id-sections)
+3. [Execution/Navigation]
+4. [Layout]
+
+
+### Introduction
+
+So what is the man page (•᷄ὤ•᷅)? Well...
+
+> Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized accordingly based on the operating system. By default, the man page uses a *terminal pager* program such as ~more~ or ~less~ to display its output. 
+
+> In case you're in dire need of definitions:
+	
+	~more:~ a command to view (not edit) the contents of a text file one screen at a time.
+	~less:~ a command with the capabilities of allowing both forward and backward navigation through the file. 
+
+<div id='id-sections'/>
+### Sections
+
+> The man page generally consists of eight sections (listed below). There are four other available sections, which cover the *C library header files*, *kernel routines*, *Tcl/Tk keywords*, and the *X Window System*. Unfortunately, these additional four are only avaible on some systems so you may or may not be able to access them.
+
+The section order provided is accurate for **Research Unix**, **BSD**, **OS X**, and **Linux**.
 
 Section | Topics
 --------| -------
@@ -17,7 +41,9 @@ Section | Topics
 7 | Miscellanea
 8 | System administration commands and daemons
 
-**Descriptions/notes about each topic:**
+##### Descriptions/notes about each topic:
+
+...for those that want a little more reading in their life ʅ(´◡`)ʃ
 
 1. **Command** is a directive to a computer program acting as an interpreter in order to perform a specific task.
 	* Ex: *ls*, *cd*, *echo* are known commands
@@ -33,22 +59,42 @@ Section | Topics
 8. **Daemon** is a computer program that runs as a background process rather than being under the direct control of an inactive user. 
 	* Ex: *sshd* is a daemond that services incoming SSH connections
 
-**Note:** 
+**Notes:** 
 
-> The section order provided is accurate for **Research Unix**, **BSD**, **OS X**, and **Linux**.
-> There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
-> This documentation will focus on section 1-3 since it relates to the class materials.
+- There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
+- The additional four section number/name is *0*, *9*, *n*, and *x*.
 
 ### Navigation:
 
 > ...
 
-** Examples: **
+**Examples:**
 
 
 ### Layout:
 
-> Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control. 
+> Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control (bold and underline is common however). The layout of a page would look similar to this:
+```
+**NAME**
+	The name of the command or function, followed by a one-line description of what it does. 
+
+<b>SYPNOPSIS</b>
+	For commands, a formal description of how to run it and what command line option (like flags) it takes.
+	For functions, a list of parameters the function takes and which header file contains its definition
+
+**DESCRIPTION**
+	A description of the functioning of the command or function. 
+
+**EXAMPLES**
+	Examples of how the command or function is commonly used.
+
+**SEE ALSO**
+	List related commands or functions pertaining to the command or function.
+```
+> Note: Other sections including OPTIONS, EXIT STATUS, RETURN VALUES, ENVIRONMENT, BUGS, FILES, AUTHOR, REPORTING BUGS, HISTORY, and COPYRIGHT may be present in the page as well depending on the command/function description. There is also the case where some of these sections may replace the standard sections. A good example is *syscall* where it has RETURN VALUE in place of EXAMPLE.
+
+
+
 
 
 
