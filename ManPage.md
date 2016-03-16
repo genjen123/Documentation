@@ -17,7 +17,7 @@ Section | Topics
 7 | Miscellanea
 8 | System administration commands and daemons
 
-** Descriptions/notes about each topic: **
+> ** Descriptions/notes about each topic: **
 
 1. **Command** is a directive to a computer program acting as an interpreter in order to perform a specific task.
 	* Ex: *ls*, *cd*, *echo* are known commands
@@ -41,13 +41,14 @@ Section | Topics
 
 ### Navigation:
 
+> 
 
 ** Examples: **
 
 
 ### Layout:
 
-Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control. 
+> Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control. 
 
 
 
