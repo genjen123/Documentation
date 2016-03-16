@@ -8,11 +8,12 @@ This document is to provide a short (but not really short 눈_눈) tutorial/refe
 Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **TOC** is here:
 
 ### Table of Contents
-1. [Introduction] (#introduction)
-2. [Sections] (#sections)
-3. [Layout] (#layout)
-4. [Execution] (#execution)
-5. [Navigating] (#navigating)
+|---------------------------------|
+|1. [Introduction] (#introduction)|
+|2. [Sections] (#sections)|
+|3. [Layout] (#layout)|
+|4. [Executing] (#executing)|
+|5. [Navigating] (#navigating)|
 
 ### Introduction
 
@@ -30,6 +31,8 @@ In case you're in dire need of definitions:
 	<dd>A command with the capabilities of allowing both forward and backward navigation through the file.</dd>
 </dl>
 
+[Top] (#table-of-contents)
+
 ### Sections
 
 The man page generally consists of eight sections (listed below). There are four other available sections, which cover the *C library header files*, *kernel routines*, *Tcl/Tk keywords*, and the *X Window System*. Unfortunately, these additional four are only avaible on some systems so you may or may not be able to access them.
@@ -46,6 +49,8 @@ Section | Topics
 6 | Games and screensavers
 7 | Miscellanea
 8 | System administration commands and daemons
+
+[Top] (#table-of-contents)
 
 ##### Descriptions/notes about each topic:
 
@@ -69,6 +74,8 @@ Section | Topics
 
 - There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
 - The additional four section number/name is *0*, *9*, *n*, and *x*.
+
+[Top] (#table-of-contents)
 
 ### Layout:
 
@@ -96,11 +103,82 @@ Each section, or page, of the man page follow a set layout, optimized for presen
 
 > Note: Other sections including OPTIONS, EXIT STATUS, RETURN VALUES, ENVIRONMENT, BUGS, FILES, AUTHOR, REPORTING BUGS, HISTORY, and COPYRIGHT may be present in the page as well depending on the command/function description. There is also the case where some of these sections may replace the standard sections. A good example is *syscall* where it has RETURN VALUE in place of EXAMPLE.
 
-### Execution:
+### Executing:
 
-> ...
+> Executing and exiting the man page is fairly simple. Like any command, its flags can be difficult to remember since there's always so many. Luckily only the basic few will be covered today so you can slowly *stache* some questions away (⁰︻⁰).
 
-**Examples:**
+A few things to note before starting:
+
+1. Keep in mind the set layout of the page when you use the man command.
+	* You can compare the similarities each page has with each other. 
+2. The man is a manual so it is very unlikely for it to contain source codes for examples.  
+3. Similar to the **VIM**, you can *exit the man page by typing q*. 
+	* There are a few VIM commands that will work on the man page. However, that's in a later section.
+
+The basic format to read a manual page for a Unix command is:
+	
+	$ man <command_name>
+
+The longer format to read a manual page is:
+	
+	$ man <section_#> <command name>
+
+The latter is unecessary since both will produce the same result. For example, type this on the terminal:
+
+	$ man ls
+
+Type q to exit then try this:
+
+	$ man 1 ls
+
+Type q to exit and notice how both method produced the same result. Now type this into the terminal:
+	
+	$ man 2 ls
+
+You should have gotten something similar to this as an error message:
+	
+	No entry for ls in section 2 of the manual
+
+This is because even though `ls` is a legal command, it belongs in section 1 of the man page ([Sections] (#sections)). When you specify the section number, `man` will only look at that section of the manual, ignoring every other section.  
+
+**Pages:**
+
+> This is a ~fun~ fact ಠ_ಠ. If you're ever feeling lazy and/or curious, there is a way to check the section number of the command. 
+
+Traditionally, pages in the man page are referred to using the notation **name(section)**. For example, 
+
+	echo(1) is the same as "man echo" which is the same as "man 1 echo" 
+
+If you have seen that format before but didn't know what it meant, you now know what it means. Additionally, you can also find it in the upper left corner in every page in `man`.
+
+**Flags:**
+
+Like any command, flags can be useful for providing more/new information to the user. The man page has its own set of flags, most of it you will probably never use and some of it you will find useful for knowing. 
+
+Type this into the terminal then type q:
+
+	$ man exit
+
+Notice how this automatically exits the man page. In truth, there are three pages relating to **exit** in the man page. However, you wouldn't know that it had existed since, by default, `man` will exit after finding and displaying the first page of the command. Now type this into the terminal and type q: 
+
+	$ man -a exit
+
+Notice how you're still in `man` but at a different page. You should have gone from BUILTIN(1) to EXIT(3) to exit(n) before you've fully exited `man`. This is due to the *-a* flag defined here:
+
+<dl>
+	<dt>-a</dt>
+	<dd>Forces <b>man</b> to display all the manual pages that matches the command and not just the first.</dd>
+</dl>
+
+In the case where you have forgotten the flags or want to check for new ones, `man` has its own help message. It is not a page of `man` so you are not executing the program by running it. Type this into the terminal:
+
+	$ man -h
+
+You should obtain something like this:
+
+
+
+[Top] (#table-of-contents)
 
 ### Navigating:
 
