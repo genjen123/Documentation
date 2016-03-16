@@ -85,7 +85,7 @@ Each section, or page, of the man page follow a set layout, optimized for presen
 
 	<dt>SYPNOPSIS</dt>
 	<dd>For commands, a formal description of how to run it and what command line option (like flags) it takes.</dd>
-	<dd>For functions, a list of parameters the function takes and which header file contains its definition</dd>
+	For functions, a list of parameters the function takes and which header file contains its definition
 
 	<dt>DESCRIPTION</dt>
 	<dd>A description of the functioning of the command or function.</dd>
