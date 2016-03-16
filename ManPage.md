@@ -53,20 +53,21 @@ Section | Topics
 2. **System call** is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on.
 	* Ex: `open`, `kill`, `exit` are known system calls
 3. **Library** is a collection of non-volatile resources used by programs to develop software.
-	* Ex: *iostream* and *string* are library functions of the C standard library
+	* Ex: `iostream` and `string` are library functions of the C standard library
 4. **Special file** is an interface for a device driver that appears in a file system as if it were an ordinary file. **Driver** is a program that operates or control a type of device attached to a computer. 
 5. **File format** is a standard way that information is encoded for storage in a computer file. 
-	* Ex: *.cpp*, *.h*, *.txt* are common file formats in C++ programming
+	* Ex: `.cpp`, `.h`, `.txt` are common file formats in C++ programming
 6. This section describes all the **games** that are available on the system and provide command line tools for controlling the **screensaver**. 
 7. As implied. 
 8. **Daemon** is a computer program that runs as a background process rather than being under the direct control of an inactive user. 
-	* Ex: *sshd* is a daemond that services incoming SSH connections
+	* Ex: `sshd` is a daemond that services incoming SSH connections
 
 **Note:** 
 
 - There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
 - The additional four section number/name is *0*, *9*, *n*, and *x*.
 
+<div id='execution/navigation'/>
 ### Execution/Navigation:
 
 > ...
@@ -83,8 +84,8 @@ Each section, or page, of the man page follow a set layout, optimized for presen
 	<dd>The name of the command or function, followed by a one-line description of what it does.</dd>
 
 	<dt>SYPNOPSIS</dt>
-	For commands, a formal description of how to run it and what command line option (like flags) it takes.
-	For functions, a list of parameters the function takes and which header file contains its definition
+	<dd>For commands, a formal description of how to run it and what command line option (like flags) it takes.</dd>
+	<dd>For functions, a list of parameters the function takes and which header file contains its definition</dd>
 
 	<dt>DESCRIPTION</dt>
 	<dd>A description of the functioning of the command or function.</dd>
