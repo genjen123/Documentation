@@ -7,10 +7,9 @@
 > Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **Table of contents** is here:
 
 1. [Introduction] (#introduction)
-2. [Sections] (#id-sections)
-3. [Execution/Navigation]
-4. [Layout]
-
+2. [Sections] (#sections)
+3. [Execution/Navigation] (#execution/navigation)
+4. [Layout] (#layout)
 
 ### Introduction
 
@@ -18,12 +17,11 @@ So what is the man page (•᷄ὤ•᷅)? Well...
 
 > Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized accordingly based on the operating system. By default, the man page uses a *terminal pager* program such as ~more~ or ~less~ to display its output. 
 
-> In case you're in dire need of definitions:
+In case you're in dire need of definitions:
 	
 	~more:~ a command to view (not edit) the contents of a text file one screen at a time.
 	~less:~ a command with the capabilities of allowing both forward and backward navigation through the file. 
 
-<div id='id-sections'/>
 ### Sections
 
 > The man page generally consists of eight sections (listed below). There are four other available sections, which cover the *C library header files*, *kernel routines*, *Tcl/Tk keywords*, and the *X Window System*. Unfortunately, these additional four are only avaible on some systems so you may or may not be able to access them.
@@ -43,7 +41,7 @@ Section | Topics
 
 ##### Descriptions/notes about each topic:
 
-...for those that want a little more reading in their life ʅ(´◡`)ʃ
+...for those that want a little more reading in their life ʅ（‾◡◝）ʃ
 
 1. **Command** is a directive to a computer program acting as an interpreter in order to perform a specific task.
 	* Ex: *ls*, *cd*, *echo* are known commands
