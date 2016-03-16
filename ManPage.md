@@ -8,12 +8,11 @@ This document is to provide a short (but not really short 눈_눈) tutorial/refe
 Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **TOC** is here:
 
 ### Table of Contents
-|---------------------------------|
-|1. [Introduction] (#introduction)|
-|2. [Sections] (#sections)|
-|3. [Layout] (#layout)|
-|4. [Executing] (#executing)|
-|5. [Navigating] (#navigating)|
+1. [Introduction] (#introduction)
+2. [Sections] (#sections)
+3. [Layout] (#layout)
+4. [Executing] (#executing)
+5. [Navigating] (#navigating)
 
 ### Introduction
 
@@ -105,7 +104,7 @@ Each section, or page, of the man page follow a set layout, optimized for presen
 
 ### Executing:
 
-> Executing and exiting the man page is fairly simple. Like any command, its flags can be difficult to remember since there's always so many. Luckily only the basic few will be covered today so you can slowly *stache* some questions away (⁰︻⁰).
+> Executing and exiting the man page is fairly simple. Like any command, its flags can be difficult to remember since there's always so many. Luckily only the basic few will be covered today so you can slowly *stache* some questions away (´┏･┓｀).
 
 A few things to note before starting:
 
@@ -143,7 +142,7 @@ This is because even though `ls` is a legal command, it belongs in section 1 of 
 
 **Pages:**
 
-> This is a ~fun~ fact ಠ_ಠ. If you're ever feeling lazy and/or curious, there is a way to check the section number of the command. 
+> This is a fun fact ಠ_ಠ. If you're ever feeling lazy and/or curious, there is a way to check the section number of the command. 
 
 Traditionally, pages in the man page are referred to using the notation **name(section)**. For example, 
 
@@ -176,6 +175,7 @@ In the case where you have forgotten the flags or want to check for new ones, `m
 
 You should obtain something like this:
 
+![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-h%20flag.png "-f flag")
 
 
 [Top] (#table-of-contents)
