@@ -8,8 +8,9 @@ Since this is meant to be a tutorial/reference of the man page, I tried to make 
 
 1. [Introduction] (#introduction)
 2. [Sections] (#sections)
-3. [Execution/Navigation] (#execution/navigation)
-4. [Layout] (#layout)
+3. [Layout] (#layout)
+4. [Execution] (#execution)
+5. [Navigating] (#navigating)
 
 ### Introduction
 
@@ -67,17 +68,11 @@ Section | Topics
 - There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
 - The additional four section number/name is *0*, *9*, *n*, and *x*.
 
-<div id='execution/navigation'/>
-### Execution/Navigation:
-
-> ...
-
-**Examples:**
-
-
 ### Layout:
 
-Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control (bold and underline is common however). The layout of a page would look similar to this:
+> It's important to know how the page is organized before you execute the man command. This way, not only will you know what to expect but it can be easier for you to navigate through the page when you know what you're looking for. On the bright side, you are almost done with the tutorial ✧*｡٩(ˊᗜˋ*)و✧*｡. 
+
+Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control (bold and underline is common however). The standard layout of a page would look similar to this:
 
 <dl>
 	<dt>NAME</dt>
@@ -85,7 +80,7 @@ Each section, or page, of the man page follow a set layout, optimized for presen
 
 	<dt>SYPNOPSIS</dt>
 	<dd>For commands, a formal description of how to run it and what command line option (like flags) it takes.</dd>
-	For functions, a list of parameters the function takes and which header file contains its definition
+	<dd>For functions, a list of parameters the function takes and which header file contains its definition</dd>
 
 	<dt>DESCRIPTION</dt>
 	<dd>A description of the functioning of the command or function.</dd>
@@ -98,6 +93,32 @@ Each section, or page, of the man page follow a set layout, optimized for presen
 </dl>
 
 > Note: Other sections including OPTIONS, EXIT STATUS, RETURN VALUES, ENVIRONMENT, BUGS, FILES, AUTHOR, REPORTING BUGS, HISTORY, and COPYRIGHT may be present in the page as well depending on the command/function description. There is also the case where some of these sections may replace the standard sections. A good example is *syscall* where it has RETURN VALUE in place of EXAMPLE.
+
+### Execution:
+
+> ...
+
+**Examples:**
+
+### Navigating:
+
+> Knowing how to navigate through a page in the man page is especially important for saving time. Anyone who has seen a long man page will agree that this is crucial to stopping future headaches ʘ‿ʘ.
+
+Depending on what you are searching for, the man page can range from being short to bearable to ridiculously long. You can test the difference in length yourself to see how long a page can extend. 
+
+Type this into your terminal for a short length man page:
+	
+	$ man pwd
+
+Now, checkout the bearable-level length:
+	
+	$ man man
+
+Finally, the ridiculously long page length: 
+
+	$ man bash
+
+How long did it take you to scroll down to the bottom of the page in that last command? Surely it was very bash-specific ≖‿≖. As you can see, these man pages can become very long and can be tiring to read through. However, if you know exactly what you want to find, it's a lot faster to directly navigate there rather than scrolling through the whole page. 
 
 
 
