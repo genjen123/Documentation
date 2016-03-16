@@ -120,6 +120,8 @@ Finally, the ridiculously long page length:
 
 How long did it take you to scroll down to the bottom of the page in that last command? Surely it was very bash-specific ≖‿≖. As you can see, these man pages can become very long and can be tiring to read through. However, if you know exactly what you want to find, it's a lot faster to directly navigate there rather than scrolling through the whole page. 
 
+[top] (#man)
+
 
 
 
