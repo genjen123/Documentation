@@ -7,6 +7,7 @@
 > Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized as follows:
 
 Section | Topics
+--------| -------
 1 | General commands
 2 | System calls
 3 | Library functions (mainly the *C standard library*)
