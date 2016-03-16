@@ -6,6 +6,7 @@
 
 > Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized as follows:
 
+```
 Section | Topics
 --------| -------
 1 | General commands
@@ -16,8 +17,9 @@ Section | Topics
 6 | Games and screensavers
 7 | Miscellanea
 8 | System administration commands and daemons
+```
 
-> ** Descriptions/notes about each topic: **
+** Descriptions/notes about each topic: **
 
 1. **Command** is a directive to a computer program acting as an interpreter in order to perform a specific task.
 	* Ex: *ls*, *cd*, *echo* are known commands
@@ -41,7 +43,7 @@ Section | Topics
 
 ### Navigation:
 
-> 
+> ...
 
 ** Examples: **
 
