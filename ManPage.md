@@ -4,7 +4,7 @@
 
 ### What is it? (•᷄ὤ•᷅)？
 
-Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized as follows:
+> Short for **manual page**, the **man page** is a software documentation normally found on a Unix or Unix-based operating system. Topics covered by the man page is split into eight sections, organized as follows:
 
 Section | Topics
 1 | General commands
@@ -29,10 +29,10 @@ Section | Topics
 	* Ex: *.cpp*, *.h*, *.txt* are common file formats in C++ programming
 6. This section describes all the **games** that are available on the system and provide command line tools for controlling the **screensaver**. 
 7. As implied. 
-8. Daemon is a computer program that runs as a background process rather than being under the direct control of an inactive user. 
+8. **Daemon** is a computer program that runs as a background process rather than being under the direct control of an inactive user. 
 	* Ex: *sshd* is a daemond that services incoming SSH connections
 
-**Notes:** 
+**Note:** 
 
 > The section order provided is accurate for **Research Unix**, **BSD**, **OS X**, and **Linux**.
 > There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
