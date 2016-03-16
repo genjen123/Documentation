@@ -1,4 +1,3 @@
-<div_id='man'/>
 # Man Page
 
 > *What is a man page? Why is it useful? For what purpose does it serve?*
@@ -13,6 +12,8 @@ Since this is meant to be a tutorial/reference of the man page, I tried to make 
 3. [Layout] (#layout)
 4. [Executing] (#executing)
 5. [Navigating] (#navigating)
+
+> Note: There is a "Top" at the end of every section. Clicking it will move you back to the top of the page where the TOC is at. Unfortunately, it will only work if you use the table of contents. Simply put, a "Top" will work for a section clicked at the TOC. 
 
 ### Introduction
 
@@ -48,8 +49,6 @@ Section | Topics
 6 | Games and screensavers
 7 | Miscellanea
 8 | System administration commands and daemons
-
-[Top] (#table-of-contents)
 
 ##### Descriptions/notes about each topic:
 
@@ -169,13 +168,16 @@ Notice how you're still in `man` but at a different page. You should have gone f
 	<dd>Forces <b>man</b> to display all the manual pages that matches the command and not just the first.</dd>
 </dl>
 
-In the case where you have forgotten the flags or want to check for new ones, `man` has its own help message. It is not a page of `man` so you are not executing the program by running it. Type this into the terminal:
+In the case where you have forgotten the flags or want to check for new ones, `man` has its own help message. Type this into the terminal:
 
 	$ man -h
 
 You should obtain something like this:
 
-![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-h%20flag.png "-f flag")
+![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-h%20flag.png "-h flag")
+
+You should notice your man page version number at the very top. It can be useful if you're planning on checking for additional functions. In case you're wondering, the *-h* prints out a help message and exit.
+
 
 
 [Top] (#table-of-contents)
