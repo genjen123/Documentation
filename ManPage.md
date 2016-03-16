@@ -5,8 +5,9 @@
 
 This document is to provide a short (but not really short 눈_눈) tutorial/reference as to what a man page is and how to use it. Consider the man page as a mini-Google of the terminal. You can find information on commands, functions, and other programming related topics within your terminal without the use of the internet ( ᐛ )و. This way, if you were at a wifi-less location coding with **VIM** (like you're supposed to), you can use the man page to reference your needs. 
 
-Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **Table of contents** is here:
+Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **TOC** is here:
 
+### Table of Contents
 1. [Introduction] (#introduction)
 2. [Sections] (#sections)
 3. [Layout] (#layout)
@@ -121,7 +122,12 @@ Finally, the ridiculously long page length:
 
 How long did it take you to scroll down to the bottom of the page in that last command? Surely it was very bash-specific ≖‿≖. As you can see, these man pages can become very long and can be tiring to read through. However, if you know exactly what you want to find, it's a lot faster to directly navigate there rather than scrolling through the whole page. 
 
-[top] (#man)
+[Top] (#table of contents)
+[Top] (#table)
+<a href="current_ucrl#table"> Top </a>
+<a href="current_ucrl#table of content"> Top </a>
+<a href="current_ucrl#table_of_content"> Top </a>
+
 
 
 
