@@ -25,15 +25,15 @@ In case you're in dire need of definitions:
 
 <dl>
 	<dt>more:</dt> 
-	<dd>A command to view (not edit) the contents of a text file one screen at a time.</dd>
+	<dd>A program to view (not edit) the contents of a text file one screen at a time.</dd>
 
 	<dt>less:</dt> 
-	<dd>A command with the capabilities of allowing both forward and backward navigation through the file.</dd>
+	<dd>A program with the capabilities of allowing both forward and backward navigation through the file.</dd>
 </dl>
 
 ### Sections
 
-The man page generally consists of eight sections (listed below). There are four other available sections, which cover the *C library header files*, *kernel routines*, *Tcl/Tk keywords*, and the *X Window System*. Unfortunately, these additional four are only avaible on some systems so you may or may not be able to access them.
+The man page generally consists of eight sections (listed below). There are four other available sections and unfortunately, these additional four are only avaible on some systems so you may or may not be able to access them.
 
 > The section order provided is accurate for **Research Unix**, **BSD**, **OS X**, and **Linux**.
 
@@ -69,7 +69,14 @@ Section | Topics
 **Note:** 
 
 - There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
-- The additional four section number/name is *0*, *9*, *n*, and *x*.
+- The additional four section number/name are:
+
+Section | Topics
+--------| ---------------
+0 | C library header files
+9 | Kernel routines
+n | Tcl/Tk keywords
+x | The X Window System
 
 ### Layout:
 
@@ -280,6 +287,37 @@ Finally, the ridiculously long page length:
 	$ man bash
 
 How long did it take you to scroll down to the bottom of the page in that last command? Surely it was very bash-specific ≖‿≖. As you can see, these man pages can become very long and can be tiring to read through. However, if you know exactly what you want to find, it's a lot faster to directly navigate there rather than scrolling through the whole page. 
+
+In case you forgot, many scrolls ago, in the [Introduction] (#introduction) section, there was the `less` program (ʘᗩʘ’). Now this `less` program is used by the man page to allow both forward and backward navigation. You may have noticed by now, the `less` commands are similar to the **VIM** editor. So if you've forgotten your VIM commands, this is a good chance to relearn some of it. 
+
+Let's try a new page this time. Ready your terminal and type this in:
+
+	$ man waitpid
+
+Now `waitpid` is a fairly lenghty page so it'll be a good example for this section. Below is your friendly commands **cheat sheet**. You should try some of these out to get the feel of it. 
+
+	To find a word/pattern:
+		/ : search for a pattern starting from the next occurrence
+		? : search for a pattern starting from the previous occurence
+		n : finds next match (find next)
+		N : finds the previous match (find previous)
+
+	To switch pages:
+		CTRL+F or SPACE : page down
+		CTRL+B : page ups
+		g : move to first line of page
+		G : move to last line of page
+
+	To navigate through each line:
+		j : move one line down
+		k : move one line up
+		CTRL+G : show the current lines, byte, and percentage statistics
+
+> Note: Just like **VIM**, numbers before a command will work as well. For example, **45G** will start the page at the 45th line. 
+
+------
+
+That's it. That's the end of the man page tutorial. You've learned the basics of what you needed to know about the `man page`. Congratulations! ヽ(＾▽＾)人(＾▽＾)人(＾▽＾)ﾉ
 
 
 
