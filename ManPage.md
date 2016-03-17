@@ -155,6 +155,7 @@ Like any program, flags can be useful for providing more/new information to the 
 	<dt>-a</dt>
 	<dd>Forces <b>man</b> to display all the manual pages that matches the command and not just the first.</dd>
 </dl>
+-------
 
 Type this into the terminal then type q:
 
@@ -165,11 +166,13 @@ Notice how this automatically exits the man page. In truth, there are three page
 	$ man -a exit
 
 Notice how you're still in `man` but at a different page. You should have gone from BUILTIN(1) to EXIT(3) to exit(n) before you've fully exited `man`.
+--------
 
 <dl>
 	<dt>-h</dt>
 	<dd>Print a help message and exit</dd>
 </dl>
+-------
 
 Type this into the terminal:
 
@@ -180,11 +183,13 @@ You should obtain something like this:
 ![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-h%20flag.png "-h flag")
 
 Conveniently, the man page provides you its list of flags and its respective description as well as the version number of your `man` (｡•̀ᴗ-)✧. So, if you ever forget a flag or want to test out new ones, you can always use **-h**.
+--------
 
 <dl>
 	<dt>-f</dt>
 	<dd>Seach the man page for the given word and provide a brief description of it.</dd>
 </dl>
+-------
 
 Try something basic like `fork`:
 
@@ -201,28 +206,32 @@ Now do the same thing but with `echo`. Your result should have produced somethin
 > [Excuse the dark overlay on the right. That's just my soul caught in the picture |‿ʘ)]
 
 Notice how the pages of where `echo` is found is listed before its functionality description. 
+-------
 
 <dl>
 	<dt>-k</dt>
 	<dd>Seach for the specified string in the man pages and displays the result on the standard output.</dd>
 </dl>
+-------
 
 Reusing `fork` as an example:
 
 	$ man -k fork
 
-If you've noticed, the list has increased by 1 (ﾉ^ヮ^)ﾉ*:・ﾟ✧. If you do the same with `echo`, you'll notice that the list has increased by 3. In cause you're wondering why **-f** and **-k** is different even though its output is similar, here it is:
+If you've noticed, the list has increased by 1 (ﾉ^ヮ^)ﾉ:・ﾟ✧. If you do the same with `echo`, you'll notice that the list has increased by 3. In cause you're wondering why **-f** and **-k** is different even though its output is similar, here it is:
 
 	-f : displays a man page description to give you a general idea of what a command does
 
 	-k : searches the man page to help you learn which functions to use to perform a job
 
 Simply put, **-f** is like the definition while **-k** is like the dictionary. 
+-------
 
 <dl>
 	<dt>-K</dt>
 	<dd>Seach for the specified string in <i>all</i> man pages.</dd>
 </dl>
+-------
 
 Consider this as an upgrade of the **-k** flag. Since **-K** goes through all pages for the specified string, it's best to use it with a section number or the program can run very slow. 
 
