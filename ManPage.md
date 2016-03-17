@@ -11,9 +11,9 @@ Since this is meant to be a tutorial/reference of the man page, I tried to make 
 2. [Sections] (#sections)
 3. [Layout] (#layout)
 4. [Executing] (#executing)
+	* [Pages] (#id-pages)
+	* [Flags] (#id-flags)
 5. [Navigating] (#navigating)
-
-> Note: There is a "Top" at the end of every section. Clicking it will move you back to the top of the page where the TOC is at. Unfortunately, it will only work if you use the table of contents. Simply put, a "Top" will work for a section clicked at the TOC. 
 
 ### Introduction
 
@@ -30,8 +30,6 @@ In case you're in dire need of definitions:
 	<dt>less:</dt> 
 	<dd>A command with the capabilities of allowing both forward and backward navigation through the file.</dd>
 </dl>
-
-[Top] (#table-of-contents)
 
 ### Sections
 
@@ -72,8 +70,6 @@ Section | Topics
 
 - There is a **Unix System V**, originally developed by AT&T 1983, that is similar to this but is listed in a different order. 
 - The additional four section number/name is *0*, *9*, *n*, and *x*.
-
-[Top] (#table-of-contents)
 
 ### Layout:
 
@@ -149,26 +145,32 @@ Traditionally, pages in the man page are referred to using the notation **name(s
 
 If you have seen that format before but didn't know what it meant, you now know what it means. Additionally, you can also find it in the upper left corner in every page in `man`.
 
+<div id="id-flags"/>
 **Flags:**
 
-Like any command, flags can be useful for providing more/new information to the user. The man page has its own set of flags, most of it you will probably never use and some of it you will find useful for knowing. 
-
-Type this into the terminal then type q:
-
-	$ man exit
-
-Notice how this automatically exits the man page. In truth, there are three pages relating to **exit** in the man page. However, you wouldn't know that it had existed since, by default, `man` will exit after finding and displaying the first page of the command. Now type this into the terminal and type q: 
-
-	$ man -a exit
-
-Notice how you're still in `man` but at a different page. You should have gone from BUILTIN(1) to EXIT(3) to exit(n) before you've fully exited `man`. This is due to the *-a* flag defined here:
+Like any program, flags can be useful for providing more/new information to the user. The man page has its own set of flags, most of it you will probably never use and some of it you will find useful for knowing. We will only cover five here. 
 
 <dl>
 	<dt>-a</dt>
 	<dd>Forces <b>man</b> to display all the manual pages that matches the command and not just the first.</dd>
 </dl>
 
-In the case where you have forgotten the flags or want to check for new ones, `man` has its own help message. Type this into the terminal:
+Type this into the terminal then type q:
+
+	$ man exit
+
+Notice how this automatically exits the man page. In truth, there are three pages relating to **exit** in the man page. However, you wouldn't know that it had existed since, by default, `man` will exit after finding and displaying the first page of the command. Now retype it but with the **-a** flag and exit: 
+
+	$ man -a exit
+
+Notice how you're still in `man` but at a different page. You should have gone from BUILTIN(1) to EXIT(3) to exit(n) before you've fully exited `man`.
+
+<dl>
+	<dt>-h</dt>
+	<dd>Print a help message and exit</dd>
+</dl>
+
+Type this into the terminal:
 
 	$ man -h
 
@@ -176,11 +178,61 @@ You should obtain something like this:
 
 ![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-h%20flag.png "-h flag")
 
-You should notice your man page version number at the very top. It can be useful if you're planning on checking for additional functions. In case you're wondering, the *-h* prints out a help message and exit.
+Conveniently, the man page provides you its list of flags and its respective description as well as the version number of your `man` (｡•̀ᴗ-)✧. So, if you ever forget a flag or want to test out new ones, you can always use **-h**.
+
+<dl>
+	<dt>-f</dt>
+	<dd>Seach the man page for the given word and provide a brief description of it.</dd>
+</dl>
+
+Try something basic like `fork`:
+
+	$ man -f fork
+
+You should get this short description:
+
+![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-f%20fork.png "-f flag") 
+
+Now do the same thing but with `echo`. Your result should have produced something like this:
+
+![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-f%20echo.png "-f flag")
+
+Notice how the pages of where `echo` is found is listed before its functionality. 
+
+<dl>
+	<dt>-k</dt>
+	<dd>Seach for the specified string in the man pages and displays the result on the standard output.</dd>
+</dl>
 
 
+<dl>
+	<dt>-K</dt>
+	<dd>Seach for the specified string in <i>all</i> man pages.</dd>
+</dl>
 
-[Top] (#table-of-contents)
+Consider this as an upgrade of the **-k** flag. Since **-K** goes through all pages for the specified string, it's best to use it with a section number or the program can run very slow. 
+
+Let's use `fork` again as an example. 
+	
+	$ man -K fork
+
+Firstly, notice how long the first line took to appear. When it does, you should see something like this at the end of the line: **[ynq]**. 
+
+	y - yes
+	n - no
+	q - quit
+
+> The program is simply asking if you want to read that page or not. Typing **y** then ENTER will open the page, **n** then ENTER will find and load the next page, and **q** and ENTER will exit the search.
+
+Here is a visual example:
+
+![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-K%20fork.png "-K flag")
+
+As mentioned before, this flag is best used with a section number. Since we know that `fork` is in section 2, type in the command and checkout the difference in result:
+
+	$ man 2 -K fork
+
+The program runs a lot faster when the section number is included doesn't it? That's because by setting the section number, you are telling `man` to check the string only in the pages of that section.
 
 ### Navigating:
 
@@ -202,7 +254,8 @@ Finally, the ridiculously long page length:
 
 How long did it take you to scroll down to the bottom of the page in that last command? Surely it was very bash-specific ≖‿≖. As you can see, these man pages can become very long and can be tiring to read through. However, if you know exactly what you want to find, it's a lot faster to directly navigate there rather than scrolling through the whole page. 
 
-[Top] (#table-of-contents)
+
+
 
 
 
