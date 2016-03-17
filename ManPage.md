@@ -183,7 +183,8 @@ You should obtain something like this:
 ![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-h%20flag.png "-h flag")
 
 Conveniently, the man page provides you its list of flags and its respective description as well as the version number of your `man` (｡•̀ᴗ-)✧. So, if you ever forget a flag or want to test out new ones, you can always use **-h**.
---------
+
+-------
 
 <dl>
 	<dt>-f</dt>
@@ -206,6 +207,7 @@ Now do the same thing but with `echo`. Your result should have produced somethin
 > [Excuse the dark overlay on the right. That's just my soul caught in the picture |‿ʘ)]
 
 Notice how the pages of where `echo` is found is listed before its functionality description. 
+
 -------
 
 <dl>
@@ -225,6 +227,7 @@ If you've noticed, the list has increased by 1 (ﾉ^ヮ^)ﾉ:・ﾟ✧. If you d
 	-k : searches the man page to help you learn which functions to use to perform a job
 
 Simply put, **-f** is like the definition while **-k** is like the dictionary. 
+
 -------
 
 <dl>
