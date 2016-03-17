@@ -135,6 +135,7 @@ You should have gotten something similar to this as an error message:
 
 This is because even though `ls` is a legal command, it belongs in section 1 of the man page ([Sections] (#sections)). When you specify the section number, `man` will only look at that section of the manual, ignoring every other section.  
 
+<div id="id-pages"/>
 **Pages:**
 
 > This is a fun fact ಠ_ಠ. If you're ever feeling lazy and/or curious, there is a way to check the section number of the command. 
@@ -197,13 +198,26 @@ Now do the same thing but with `echo`. Your result should have produced somethin
 
 ![alt text](https://github.com/genjen123/Tutorial/blob/master/Images/-f%20echo.png "-f flag")
 
-Notice how the pages of where `echo` is found is listed before its functionality. 
+> [Excuse the dark overlay on the right. That's just my soul caught in the picture |‿ʘ)]
+
+Notice how the pages of where `echo` is found is listed before its functionality description. 
 
 <dl>
 	<dt>-k</dt>
 	<dd>Seach for the specified string in the man pages and displays the result on the standard output.</dd>
 </dl>
 
+Reusing `fork` as an example:
+
+	$ man -k fork
+
+If you've noticed, the list has increased by 1 (ﾉ^ヮ^)ﾉ*:・ﾟ✧. If you do the same with `echo`, you'll notice that the list has increased by 3. In cause you're wondering why **-f** and **-k** is different even though its output is similar, here it is:
+
+	-f : displays a man page description to give you a general idea of what a command does
+
+	-k : searches the man page to help you learn which functions to use to perform a job
+
+Simply put, **-f** is like the definition while **-k** is like the dictionary. 
 
 <dl>
 	<dt>-K</dt>
@@ -212,7 +226,7 @@ Notice how the pages of where `echo` is found is listed before its functionality
 
 Consider this as an upgrade of the **-k** flag. Since **-K** goes through all pages for the specified string, it's best to use it with a section number or the program can run very slow. 
 
-Let's use `fork` again as an example. 
+Again, let's use `fork` again as an example. 
 	
 	$ man -K fork
 
