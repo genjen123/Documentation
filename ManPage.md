@@ -166,6 +166,7 @@ Notice how this automatically exits the man page. In truth, there are three page
 	$ man -a exit
 
 Notice how you're still in `man` but at a different page. You should have gone from BUILTIN(1) to EXIT(3) to exit(n) before you've fully exited `man`.
+
 --------
 
 <dl>
@@ -184,7 +185,7 @@ You should obtain something like this:
 
 Conveniently, the man page provides you its list of flags and its respective description as well as the version number of your `man` (｡•̀ᴗ-)✧. So, if you ever forget a flag or want to test out new ones, you can always use **-h**.
 
--------
+--------
 
 <dl>
 	<dt>-f</dt>
