@@ -232,6 +232,7 @@ Notice how the pages of where `echo` is found is listed before its functionality
 	<dt>-k</dt>
 	<dd>Seach for the specified string in the man pages and displays the result on the standard output.</dd>
 </dl>
+
 --------
 
 Reusing `fork` as an example:
