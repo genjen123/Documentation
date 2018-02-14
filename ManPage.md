@@ -26,10 +26,9 @@ In case you're in dire need of definitions:
 <dl>
 	<dt>more:</dt> 
 	<dd>A program to view (not edit) the contents of a text file one screen at a time.</dd>
+</dl>
 
-	<dt>more:</dt> 
-	<dd>A program to view (not edit) the contents of a text file one screen at a time.</dd>
-
+<dl>
 	<dt>less:</dt> 
 	<dd>A program with the capabilities of allowing both forward and backward navigation through the file.</dd>
 </dl>
