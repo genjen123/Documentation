@@ -7,13 +7,13 @@ This document is to provide a short (but not really short 눈_눈) tutorial/refe
 Since this is meant to be a tutorial/reference of the man page, I tried to make it ~~long~~ short as possible. However, never fear for the **TOC** is here:
 
 ### Table of Contents
-1. [Introduction] (#introduction)
-2. [Sections] (#sections)
-3. [Layout] (#layout)
-4. [Executing] (#executing)
-	* [Pages] (#id-pages)
-	* [Flags] (#id-flags)
-5. [Navigating] (#navigating)
+1. [Introduction](#introduction)
+2. [Sections](#sections)
+3. [Layout](#layout)
+4. [Executing](#executing)
+	* [Pages](#id-pages)
+	* [Flags](#id-flags)
+5. [Navigating](#navigating)
 
 ### Introduction
 
@@ -24,6 +24,9 @@ Short for **manual page**, the **man page** is a software documentation normally
 In case you're in dire need of definitions:
 
 <dl>
+	<dt>more:</dt> 
+	<dd>A program to view (not edit) the contents of a text file one screen at a time.</dd>
+
 	<dt>more:</dt> 
 	<dd>A program to view (not edit) the contents of a text file one screen at a time.</dd>
 
