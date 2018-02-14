@@ -153,6 +153,7 @@ You should have gotten something similar to this as an error message:
 This is because even though `ls` is a legal command, it belongs in section 1 of the man page ([Sections](#sections)). When you specify the section number, `man` will only look at that section of the manual, ignoring every other section.  
 
 <div id="id-pages"/>
+
 ##### Pages:
 
 > This is a fun fact ಠ_ಠ. If you're ever feeling lazy and/or curious, there is a way to check the section number of the command. 
@@ -164,6 +165,7 @@ Traditionally, pages in the man page are referred to using the notation **name(s
 If you have seen that format before but didn't know what it meant, you now know what it means. Additionally, you can also find it in the upper left corner in every page in `man`.
 
 <div id="id-flags"/>
+
 ##### Flags:
 
 Like any program, flags can be useful for providing more/new information to the user. The man page has its own set of flags, most of it you will probably never use and some of it you will find useful for knowing. We will only cover five here. 
@@ -172,6 +174,7 @@ Like any program, flags can be useful for providing more/new information to the 
 	<dt>-a</dt>
 	<dd>Forces <b>man</b> to display all the manual pages that matches the command and not just the first.</dd>
 </dl>
+
 --------
 
 Type this into the terminal then type q:
@@ -190,6 +193,7 @@ Notice how you're still in `man` but at a different page. You should have gone f
 	<dt>-h</dt>
 	<dd>Print a help message and exit</dd>
 </dl>
+
 --------
 
 Type this into the terminal:
@@ -208,6 +212,7 @@ Conveniently, the man page provides you its list of flags and its respective des
 	<dt>-f</dt>
 	<dd>Seach the man page for the given word and provide a brief description of it.</dd>
 </dl>
+
 --------
 
 Try something basic like `fork`:
@@ -253,6 +258,7 @@ Simply put, **-f** is like the definition while **-k** is like the dictionary.
 	<dt>-K</dt>
 	<dd>Seach for the specified string in <i>all</i> man pages.</dd>
 </dl>
+
 --------
 
 Consider this as an upgrade of the **-k** flag. Since **-K** goes through all pages for the specified string, it's best to use it with a section number or the program can run very slow. 
