@@ -35,7 +35,7 @@ In case you're in dire need of definitions:
 
 ### Sections
 
-The man page generally consists of eight sections (listed below). There are four other available sections and unfortunately, these additional four are only avaible on some systems so you may or may not be able to access them.
+The man page generally consists of eight sections (listed below). There are four other available sections and unfortunately, those additional four are only avaible on some systems so you may or may not be able to access them.
 
 > The section order provided is accurate for **Research Unix**, **BSD**, **OS X**, and **Linux**.
 
@@ -82,24 +82,32 @@ x | The X Window System
 
 ### Layout:
 
-> It's important to know how the page is organized before you execute the man command. This way, not only will you know what to expect but it can be easier for you to navigate through the page when you know what you're looking for. On the bright side, you are almost done with the tutorial ✧*｡٩(ˊᗜˋ*)و✧*｡. 
+> It's important to know how the page is organized before you execute the man command. This way, not only will you know what to expect but it can be easier for you to navigate through the page when you know what you're looking for. On the bright side, you are almost done with the tutorial ✧*｡٩(ˊᗜˋ*)و✧*｡.
 
 Each section, or page, of the man page follow a set layout, optimized for presentation on an ASCII text display without any form of highlighting or font control (bold and underline is common however). The standard layout of a page would look similar to this:
 
 <dl>
 	<dt>NAME</dt>
 	<dd>The name of the command or function, followed by a one-line description of what it does.</dd>
+</dl>
 
+<dl>
 	<dt>SYPNOPSIS</dt>
 	<dd>For commands, a formal description of how to run it and what command line option (like flags) it takes.</dd>
 	<dd>For functions, a list of parameters the function takes and which header file contains its definition</dd>
+</dl>
 
+<dl>
 	<dt>DESCRIPTION</dt>
 	<dd>A description of the functioning of the command or function.</dd>
+</dl>
 
+<dl>
 	<dt>EXAMPLES</dt>
 	<dd>Examples of how the command or function is commonly used.</dd>
+</dl>
 
+<dl>
 	<dt>SEE ALSO</dt>
 	<dd>List related commands or functions pertaining to the command or function.</dd>
 </dl>
@@ -142,10 +150,10 @@ You should have gotten something similar to this as an error message:
 	
 	No entry for ls in section 2 of the manual
 
-This is because even though `ls` is a legal command, it belongs in section 1 of the man page ([Sections] (#sections)). When you specify the section number, `man` will only look at that section of the manual, ignoring every other section.  
+This is because even though `ls` is a legal command, it belongs in section 1 of the man page ([Sections](#sections)). When you specify the section number, `man` will only look at that section of the manual, ignoring every other section.  
 
 <div id="id-pages"/>
-**Pages:**
+##### Pages:
 
 > This is a fun fact ಠ_ಠ. If you're ever feeling lazy and/or curious, there is a way to check the section number of the command. 
 
@@ -156,7 +164,7 @@ Traditionally, pages in the man page are referred to using the notation **name(s
 If you have seen that format before but didn't know what it meant, you now know what it means. Additionally, you can also find it in the upper left corner in every page in `man`.
 
 <div id="id-flags"/>
-**Flags:**
+##### Flags:
 
 Like any program, flags can be useful for providing more/new information to the user. The man page has its own set of flags, most of it you will probably never use and some of it you will find useful for knowing. We will only cover five here. 
 
@@ -164,7 +172,7 @@ Like any program, flags can be useful for providing more/new information to the 
 	<dt>-a</dt>
 	<dd>Forces <b>man</b> to display all the manual pages that matches the command and not just the first.</dd>
 </dl>
--------
+--------
 
 Type this into the terminal then type q:
 
@@ -182,7 +190,7 @@ Notice how you're still in `man` but at a different page. You should have gone f
 	<dt>-h</dt>
 	<dd>Print a help message and exit</dd>
 </dl>
--------
+--------
 
 Type this into the terminal:
 
@@ -200,7 +208,7 @@ Conveniently, the man page provides you its list of flags and its respective des
 	<dt>-f</dt>
 	<dd>Seach the man page for the given word and provide a brief description of it.</dd>
 </dl>
--------
+--------
 
 Try something basic like `fork`:
 
@@ -218,13 +226,13 @@ Now do the same thing but with `echo`. Your result should have produced somethin
 
 Notice how the pages of where `echo` is found is listed before its functionality description. 
 
--------
+--------
 
 <dl>
 	<dt>-k</dt>
 	<dd>Seach for the specified string in the man pages and displays the result on the standard output.</dd>
 </dl>
--------
+--------
 
 Reusing `fork` as an example:
 
@@ -238,13 +246,13 @@ If you've noticed, the list has increased by 1 (ﾉ^ヮ^)ﾉ:・ﾟ✧. If you d
 
 Simply put, **-f** is like the definition while **-k** is like the dictionary. 
 
--------
+--------
 
 <dl>
 	<dt>-K</dt>
 	<dd>Seach for the specified string in <i>all</i> man pages.</dd>
 </dl>
--------
+--------
 
 Consider this as an upgrade of the **-k** flag. Since **-K** goes through all pages for the specified string, it's best to use it with a section number or the program can run very slow. 
 
@@ -290,7 +298,7 @@ Finally, the ridiculously long page length:
 
 How long did it take you to scroll down to the bottom of the page in that last command? Surely it was very bash-specific ≖‿≖. As you can see, these man pages can become very long and can be tiring to read through. However, if you know exactly what you want to find, it's a lot faster to directly navigate there rather than scrolling through the whole page. 
 
-In case you forgot, many scrolls ago, in the [Introduction] (#introduction) section, there was the `less` program (ʘᗩʘ’). Now this `less` program is used by the man page to allow both forward and backward navigation. You may have noticed by now, the `less` commands are similar to the **VIM** editor. So if you've forgotten your VIM commands, this is a good chance to relearn some of it. 
+In case you forgot, many scrolls ago, in the [Introduction](#introduction) section, there was the `less` program (ʘᗩʘ’). Now this `less` program is used by the man page to allow both forward and backward navigation. You may have noticed by now, the `less` commands are similar to the **VIM** editor. So if you've forgotten your VIM commands, this is a good chance to relearn some of it. 
 
 Let's try a new page this time. Ready your terminal and type this in:
 
@@ -317,7 +325,7 @@ Now `waitpid` is a fairly lenghty page so it'll be a good example for this secti
 
 > Note: Just like **VIM**, numbers before a command will work as well. For example, **45G** will start the page at the 45th line. 
 
-------
+--------
 
 That's it. That's the end of the man page tutorial. You've learned the basics of what you needed to know about the `man page`. Congratulations! ヽ(＾▽＾)人(＾▽＾)人(＾▽＾)ﾉ
 
